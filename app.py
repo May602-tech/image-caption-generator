@@ -3,9 +3,11 @@ import numpy as np
 import pickle
 import tensorflow as tf
 from tensorflow.keras.models import Model
-from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2, preprocess_input
+from tensorflow.keras.applications import MobileNetV2
+from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+
 
 # Load MobileNetV2 model
 mobilenet_model = MobileNetV2(weights="imagenet")
